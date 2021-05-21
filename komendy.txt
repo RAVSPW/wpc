@@ -1,0 +1,16 @@
+aws s3 sync ./src s3://test209739 --acl public-read
+aws s3 sync ./dist s3://test209739 --acl public-read
+
+npm run build:prod
+npm run build:dev
+
+export APP_BUCKET=test209739
+npx webpack --mode production
+npm install aws-sdk aws-amplify
+npm install webpack webpack-cli --save-dev
+ npm install -g npm
+
+run nmp install -g npm
+npm install uuid
+npm install --save amazon-cognito-identity-js
+npm install --save amazon-cognito-identity-js
